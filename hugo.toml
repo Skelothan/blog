@@ -20,3 +20,7 @@ theme = 'eskaven'
           enable = true
         [markup.goldmark.extensions.extras.superscript]
           enable = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
