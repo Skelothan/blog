@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <div class="content">
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+    <ul class="all-tags-list">
+      {{ range where .Pages "Unlisted" false }}
+        <li>{{ partial "icons/tag.html" }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

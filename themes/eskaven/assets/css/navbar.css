@@ -1,0 +1,23 @@
+nav {
+    background-color: var(--purple-dark-1);
+    margin-bottom: 10px;
+    box-shadow: 0 3px 10px var(--cyan-gray-2);
+    padding-left: .25em;
+    
+}
+
+nav a {
+    font-family: var(--header-text);
+    display: inline-block;
+    color: white;
+    padding: .25em;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--purple-light-1);
+    }
+    &:active {
+        background-color: var(--cyan-light-1);
+    }
+    
+}

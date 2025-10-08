@@ -1,0 +1,24 @@
+footer p {
+    text-align: center;
+    font-size: 10pt;
+}
+
+footer p.footer-small {
+    text-align: center;
+    font-size: 8pt;
+}
+
+footer a {
+    color: var(--cyan-core);
+
+
+    &:hover {
+        color: var(--cyan-dark-1);
+        text-decoration: underline;
+    }
+    
+    &:active {
+        color: var(--purple-core);
+        text-decoration: underline;
+    }
+}

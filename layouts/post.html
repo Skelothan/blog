@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <div class="content">
+    
+    
+    <div class="post-header">
+      <h2>{{ .Title }}</h2>
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format "2006-01-02" }}
+      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      {{ partial "tags.html" (dict "taxonomy" "tags" "page" .) }}
+    </div>
+
+    
+
+    
+      {{ .Content }}
+
+    
+  </div>
+{{ end }}
+

@@ -1,0 +1,136 @@
+:root {
+    --purple-core: #ad0dff;
+    --purple-light-1: #d177ff;
+    --purple-light-2: #e2a8ff;
+    --purple-dark-1: #600091;
+    --purple-dark-2: #4a006f;
+    --purple-gray-1: #a68cb3;
+    --purple-gray-2: #978d9b;
+    --purple-gray-1-light: #bdabc7;
+    --purple-gray-2-light: #aaa2ae;
+    --purple-gray-3-light: #dad5dd;
+    --purple-gray-3-lighter: #e8e3eb;
+
+    --cyan-core: #09afef;
+    --cyan-light-1: #76d9ff;
+    --cyan-light-2: #a7e7ff;
+    --cyan-dark-1: #006388;
+    --cyan-dark-2: #004c69;
+    --cyan-gray-1: #84a0aa;
+    --cyan-gray-2: #858e92;
+    --cyan-gray-1-light: #a5b9c0;
+    --cyan-gray-2-light: #99a1a5;
+    --cyan-gray-3-light: #d1d6d8;
+    --cyan-gray-3-lighter: #dfe4e6;
+    --cyan-gray-1-dark: #6a8690;
+
+    --main-bg-gradient: linear-gradient(to bottom, var(--cyan-gray-3-light), var(--cyan-light-1));
+
+    --bootstrap-success: #28a745;
+    --bootstrap-success-gray-2-light: #97a996;
+    --bootstrap-danger: #dc3545;
+    --bootstrap-danger-gray-2-light: #9e837f;
+
+
+    --main-text: "Ancizar Sans", sans-serif;
+    --header-text: "Ancizar Sans", Verdana, sans-serif;
+    --monospace-text: "Recursive", monospace;
+
+    --main-text-line-height: 125%;
+
+}
+
+/* ---
+ * Overscroll coloring.
+ * Author: Tommy
+ * Source: Source: https://stackoverflow.com/a/73407276
+ */
+
+/* Applies to top of page */
+html[data-scroll="0"] body {
+  background-color: var(--cyan-gray-3-light);
+}
+
+/* Applies to bottom of page */
+html:not([data-scroll="0"]) body {
+  background-color: var(--cyan-light-1);
+}
+
+/* Applies when the page content is too small */
+html[data-viewport-too-big="true"] body {
+  background-color: var(--cyan-light-1);
+}
+
+/* --- */
+
+body {
+    background-image: var(--main-bg-gradient);
+    background-repeat: repeat-x;
+    color: #333;
+    // background-color: var(--cyan-light-1);
+    padding: .5% 2.5%;
+    margin: 0;
+    font-family: var(--main-text);
+    line-height: 18px;
+}
+
+.container, main, header, footer {
+    width: 80%;
+    margin: auto;
+}
+
+.hovering, table {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--purple-light-2);
+    box-shadow: 0 2px 4px var(--purple-gray-2-light);
+}
+
+.clickable {
+    &:hover {
+        position: relative;
+        top: -2px;
+        box-shadow: 0 4px 5px 1px var(--purple-gray-2-light);
+    }
+
+    &:active {
+        position: relative;
+        top: 2px;
+        box-shadow: 0 0 0 var(--purple-gray-2-light);
+    }
+}
+
+/* --- Post headers --- */
+
+.post-header {
+    margin-bottom: 1.5em;
+
+    h2 {
+        margin-bottom: .25em;
+    }
+}
+
+time {
+    font-style: italic;
+    color: var(--cyan-gray-1-dark);
+}
+
+/* --- Body --- */
+
+div.content {
+    background-color: white;
+    
+    padding: 1em 1.5em;
+    border: 1px var(--purple-light-1) solid;
+    margin-bottom: 1em;
+
+    &.section-index {
+        background-color: var(--purple-gray-3-lighter);
+    }
+}
+
+div.content, nav {
+    box-shadow: 0 5px 10px #393d3f99;
+}
+
+

@@ -1,0 +1,229 @@
+/* --- Body text, headers --- */
+
+p, ol, ul, td {
+    font: var(--main-text);
+    font-size: 100%;
+    line-height: var(--main-text-line-height);
+    margin-top: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--header-text);
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: .5em;
+    font-size: 225%;
+    padding-bottom: .5em;
+    border-bottom: 1px var(--purple-dark-1) solid;
+}
+
+h2.tag-header {
+    font-size: 225%;
+    border-bottom: 0;
+}
+
+h3 {
+    color: var(--purple-dark-1);
+    font-size: 175%;
+    margin-bottom: .5em;
+}
+
+h4, h5, h6 {
+    margin-bottom: .25em;
+    margin-top: .25em;
+}
+
+h4 {
+    font-size: 150%;
+}
+
+h5 {
+    font-size: 125%;
+}
+
+h6 {
+    font-size: 115%;
+    font-style: italic;
+}
+
+/* --- Block quote --- */
+
+blockquote {
+    border-left: 2px solid var(--cyan-gray-1);
+    padding-left: .5em;
+    color: var(--cyan-dark-2);
+
+}
+
+/* --- Code blocks --- */
+
+code {
+    background-color: var(--cyan-gray-3-lighter);
+    padding: .125em;
+    border: 1px var(--cyan-dark-1) solid;
+    box-shadow: 0 1px 3px var(--cyan-gray-2-light) inset;
+}
+
+pre {
+    font-family: var(--monospace-text);
+    background-color: var(--cyan-gray-3-lighter);
+    padding: 1em;
+    box-shadow: 0 4px 8px var(--cyan-gray-2-light) inset;
+    border: 1px var(--cyan-dark-1) solid;
+
+    code {
+        padding: unset;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+/* --- Links --- */
+
+div.content a {
+    color: var(--cyan-core);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--cyan-dark-1);
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: var(--purple-core);
+        text-decoration: underline;
+    }
+}
+
+a {
+    cursor: pointer;
+}
+
+/* --- Forms --- */
+
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px 7px 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+
+    h2 {
+        text-align: left;
+        font-weight: bold;
+        padding: 5px 5px 5px 15px;
+        font-size: 12px;
+        margin: -7px -7px 0;
+        background-color: #c00;
+        color: #fff;
+    }
+
+    ul li {
+        font-size: 12px;
+        list-style: square;
+    }
+}
+
+label {
+    display: block;
+}
+
+/* --- Lists --- */
+
+ul ul {
+    padding-left: 1em;
+}
+
+hr {
+    border-top: 0px;
+    border-bottom: 1px var(--purple-dark-1) solid;
+}
+
+/* --- Tables --- */
+
+table {
+    // border: 1px solid var(--purple-light-1);
+    border-collapse: collapse;
+    margin-bottom: 1em;
+
+    /* Outer borders */
+    tr:first-child th,
+    tr:first-child td {
+        border-top: 1px solid var(--purple-light-1);
+    }
+
+    tr:last-child td,
+    tr:last-child th {
+        border-bottom: 1px solid var(--purple-light-1);
+    }
+    tr td:first-child,
+    tr th:first-child {
+        border-left: 1px solid var(--purple-light-1);
+    }
+    tr td:last-child,
+    tr th:last-child {
+        border-right: 1px solid var(--purple-light-1);
+    }
+
+    th, td {
+        padding: .25em;
+        border: 1px solid var(--purple-gray-1-light);
+    }
+
+    th {
+        background-color: var(--purple-gray-3-light);
+    }
+
+    
+}
+
+/* --- Misc --- */
+
+.hidden {
+    visibility: hidden;
+    height: 0px;
+    margin: 0px !important;
+}
+
+/* --- Alerts and controls (deprecated) --- */
+
+div {
+    &.field, &.actions {
+        margin-bottom: 10px;
+    }
+    &.flash {
+        padding: 10px;
+        margin-bottom: 1rem;
+        background-color: white;
+        p {
+            margin-bottom: 0px;
+        }
+    }
+    &.notice {
+        border-color: var(--bootstrap-success);
+        box-shadow: 0 2px 4px var(--bootstrap-success-gray-2-light);
+    }
+    &.warning {
+        border-color: var(--bootstrap-danger);
+        box-shadow: 0 2px 4px var(--bootstrap-danger-gray-2-light);
+    }
+}
+
+
+p.citation {
+    margin-left: 2em;
+    text-indent: -2em;
+}
+
+ul.footnotes {
+    list-style-type: none;
+    padding-left: 0;
+}

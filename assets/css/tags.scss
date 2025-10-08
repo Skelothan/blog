@@ -1,0 +1,29 @@
+.tags-list {
+    margin-top: .25em;
+    .icon {
+        height: 1em;
+        display: inline-block;
+    }
+}
+
+.all-tags-list {
+    padding-left: 1em;
+}
+
+.all-tags-list li {
+    font-size: 125%;
+    list-style-type: none;
+    margin-bottom: .25em;
+}
+
+.all-tags-list li .icon {
+    height: 1em;
+    margin-right: .5em;
+    display: inline-block;
+}
+
+a.tag {
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 0 .125em .5em;
+}

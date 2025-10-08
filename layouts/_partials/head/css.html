@@ -1,0 +1,89 @@
+{{- with resources.Get "css/theme.scss" }}
+  {{ $opts := dict "transpiler" "libsass"
+                    "outputStyle" "expanded"
+                    "targetPath" "css/theme.css" }}
+  {{ with . | toCSS $opts }}
+    {{- if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{- else }}
+      {{- with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{- end }}
+    {{- end }}
+    {{- end }}
+{{- end }}
+
+{{- with resources.Get "css/main.scss" }}
+  {{ $opts := dict "transpiler" "libsass"
+                   "outputStyle" "expanded"
+                   "targetPath" "css/main.css" }}
+  {{ with . | toCSS $opts }}
+    {{- if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{- else }}
+      {{- with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- with resources.Get "css/header.scss" }}
+  {{ $opts := dict "transpiler" "libsass"
+                   "outputStyle" "expanded"
+                   "targetPath" "css/header.css" }}
+  {{ with . | toCSS $opts }}
+    {{- if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{- else }}
+      {{- with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- with resources.Get "css/footer.scss" }}
+  {{ $opts := dict "transpiler" "libsass"
+                   "outputStyle" "expanded"
+                   "targetPath" "css/footer.css" }}
+  {{ with . | toCSS $opts }}
+    {{- if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{- else }}
+      {{- with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- with resources.Get "css/tags.scss" }}
+  {{ $opts := dict "transpiler" "libsass"
+                   "outputStyle" "expanded"
+                   "targetPath" "css/tags.css" }}
+  {{ with . | toCSS $opts }}
+    {{- if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{- else }}
+      {{- with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- with resources.Get "css/index.scss" }}
+  {{ $opts := dict "transpiler" "libsass"
+                   "outputStyle" "expanded"
+                   "targetPath" "css/index.css" }}
+  {{ with . | toCSS $opts }}
+    {{- if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{- else }}
+      {{- with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
