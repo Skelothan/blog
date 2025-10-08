@@ -18,7 +18,7 @@ When I later learned about the concept of “third places”, I immediately unde
 
 ### What is a third place?
 
-A third place, as originally defined in Ray Oldenburg’s The Great Good Place, “is a generic designation for a great variety of public places that host the regular, voluntary, informal, and happily anticipated gatherings of individuals beyond the realms of home and work,” in contrast to the home as the “first place” and the workplace as the “second place”.</sup>1^ The presence of abundant third places in one’s neighborhood is associated with high perceived quality of life^2^ and psychological benefits such as reduced stress and improved mood.^3^
+A third place, as originally defined in Ray Oldenburg’s The Great Good Place, “is a generic designation for a great variety of public places that host the regular, voluntary, informal, and happily anticipated gatherings of individuals beyond the realms of home and work,” in contrast to the home as the “first place” and the workplace as the “second place”.^1^ The presence of abundant third places in one’s neighborhood is associated with high perceived quality of life^2^ and psychological benefits such as reduced stress and improved mood.^3^
 
 Oldenburg continues to define eight common characteristics of a third place:
 
